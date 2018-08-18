@@ -1,0 +1,119 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ms.aux
+The style file: apj.bst
+Database file #1: msNotes.bib
+Warning--I didn't find a database entry for "Blandford1977"
+Warning--I didn't find a database entry for "Komissarov2001"
+Warning--I didn't find a database entry for "Komissarov2004e"
+Warning--I didn't find a database entry for "Komissarov2004"
+Warning--I didn't find a database entry for "Komissarov2005"
+Warning--I didn't find a database entry for "Semenov2004"
+Warning--I didn't find a database entry for "McKinney2004"
+Warning--I didn't find a database entry for "McKinney2005"
+Warning--I didn't find a database entry for "McKinney2007a"
+Warning--I didn't find a database entry for "McKinney2007b"
+Warning--I didn't find a database entry for "Komissarov2007"
+Warning--I didn't find a database entry for "Tchekhovskoy2008"
+Warning--I didn't find a database entry for "Tchekhovskoy2010"
+Warning--I didn't find a database entry for "Tchekhovskoy2011"
+Warning--I didn't find a database entry for "Palenzuela2011"
+Warning--I didn't find a database entry for "Alic2012"
+Warning--I didn't find a database entry for "Tchekhovskoy2012"
+Warning--I didn't find a database entry for "Penna2013"
+Warning--I didn't find a database entry for "McKinney2013"
+Warning--I didn't find a database entry for "Fendt1997"
+Warning--I didn't find a database entry for "Udensky2004"
+Warning--I didn't find a database entry for "Udensky2005"
+Warning--I didn't find a database entry for "Palenzuela2010"
+Warning--I didn't find a database entry for "Contopoulos2013"
+Warning--I didn't find a database entry for "Nathanail2014"
+Warning--I didn't find a database entry for "Tanabe2008"
+Warning--I didn't find a database entry for "Beskin2013"
+Warning--I didn't find a database entry for "Pan2014"
+Warning--I didn't find a database entry for "Pan2015b"
+Warning--I didn't find a database entry for "Pan2015"
+Warning--I didn't find a database entry for "Pan2016"
+Warning--I didn't find a database entry for "Gralla2014"
+Warning--I didn't find a database entry for "Gralla2015"
+Warning--I didn't find a database entry for "Gralla2016a"
+Warning--I didn't find a database entry for "Yang2015"
+Warning--I didn't find a database entry for "Penna2015"
+Warning--I didn't find a database entry for "Menon2005"
+Warning--I didn't find a database entry for "Menon2007"
+Warning--I didn't find a database entry for "Menon2011"
+Warning--I didn't find a database entry for "Brennan2013"
+Warning--I didn't find a database entry for "Menon2015"
+Warning--I didn't find a database entry for "Compere2016"
+Warning--I didn't find a database entry for "Komissarov2009"
+Warning--I didn't find a database entry for "Beskin2010"
+Warning--I didn't find a database entry for "Bambi2012b"
+Warning--I didn't find a database entry for "Bambi2012"
+Warning--I didn't find a database entry for "Bambi2015"
+Warning--I didn't find a database entry for "Pei2016"
+Warning--I didn't find a database entry for "Takahashi1990"
+Warning--I didn't find a database entry for "Koide2002"
+Warning--I didn't find a database entry for "Koide2003"
+Warning--I didn't find a database entry for "Lasota2014"
+Warning--I didn't find a database entry for "Koide2014"
+Warning--I didn't find a database entry for "Toma2014"
+Warning--I didn't find a database entry for "Kojima2015"
+Warning--I didn't find a database entry for "Toma2016"
+Warning--I didn't find a database entry for "Yang2014"
+Warning--I didn't find a database entry for "Begelman1998"
+Warning--I didn't find a database entry for "Lyubarskii1999"
+Warning--I didn't find a database entry for "Li2000"
+Warning--I didn't find a database entry for "Wang2004"
+Warning--I didn't find a database entry for "Tomimatsu2001"
+Warning--I didn't find a database entry for "McKinney2009a"
+Warning--I didn't find a database entry for "Narayan2009g"
+Warning--I didn't find a database entry for "Scharlemann1973"
+Warning--I didn't find a database entry for "Press1987"
+Warning--I didn't find a database entry for "Gruzinov2005"
+Warning--I didn't find a database entry for "Garofalo2009"
+Warning--I didn't find a database entry for "Petterson1974"
+Warning--I didn't find a database entry for "Contopoulos1999"
+Warning--I didn't find a database entry for "Gralla2016b"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 0 entries,
+            3085 wiz_defined-function locations,
+            773 strings with 5756 characters,
+and the built_in function-call counts, 20 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 8
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 4
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 3
+(There were 71 warnings)

@@ -1,0 +1,1124 @@
+\documentclass[aps,prd,preprint,groupedaddress]{revtex4-1}
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage{array}
+\usepackage{amsmath,amssymb}
+
+\def\nn{\nonumber}
+\def\beq{\begin{equation}}
+\def\beqn{\begin{eqnarray}}
+\def\eeq{\end{equation}}
+\def\eeqn{\end{eqnarray}}
+\def\ct{\cos\theta}
+\def\st{\sin\theta}
+\def\cct{\cos^2\theta}
+\def\sst{\sin^2\theta}
+\def\A{A_\phi}
+\def\Ar{A_{\phi,r}}
+\def\Ah{A_{\phi,\theta}}
+\def\Arr{A_{\phi,rr}}
+\def\Ahh{A_{\phi,\theta\theta}}
+\def\Am{A_{\phi,\mu}}
+\def\Amm{A_{\phi,\mu\mu}}
+\def\ARR{A_{\phi,RR}}
+\def\AR{A_{\phi,R}}
+\def\g{\sqrt{-g}}
+\def\WH{\Omega_{\rm H}}
+
+\begin{document}
+
+\title{The jet solution to BZ mechanism}
+\author{Zhen Pan}
+\affiliation{Department of Physics, University of California, Davis}
+\date{\today}
+%\maketitle
+
+\section{Kerr-Schild coordinate}
+The Kerr-Schild coordinate
+
+$g_{\mu\nu}=\left(
+  \begin{array}{cccc}
+    -1+\frac{2r}{\Sigma} & \frac{2r}{\Sigma} & 0 & -\frac{2a r \sin^2\theta}{\Sigma} \\
+    \frac{2r}{\Sigma}& 1+\frac{2r}{\Sigma} & 0 & -a(1+\frac{2r}{\Sigma})\sin^2\theta \\
+    0 & 0 & \Sigma & 0 \\
+   -\frac{2a r \sin^2\theta}{\Sigma} & -a(1+\frac{2r}{\Sigma})\sin^2\theta & 0 & \frac{\beta}{\Sigma}\sst \\
+  \end{array}
+\right)$
+
+$g^{\mu\nu}=\left(
+  \begin{array}{cccc}
+    -1-\frac{2r}{\Sigma} & \frac{2r}{\Sigma} & 0 & 0 \\
+    \frac{2r}{\Sigma}& \frac{\Delta}{\Sigma} & 0 & \frac{a}{\Sigma} \\
+    0 & 0 &  \frac{1}{\Sigma}  & 0 \\
+   0 &  \frac{a}{\Sigma}  & 0 & \frac{1}{\Sigma\sin^2\theta} \\
+  \end{array}
+\right)$
+
+where $\Sigma=r^2+a^2 \cos^2\theta$, $\Delta=r^2-2r+a^2$, $\sqrt{-g}=\Sigma\sin\theta$, and
+\beqn
+\beta
+&=& \Delta\Sigma + 2r(r^2+a^2) \nn\\
+&=& (\Sigma+a^2\sst)\Sigma+ 2ra^2\sst \nn\\
+&=& (r^2+a^2)\Sigma + 2ra^2\sst \nn\\
+&=& (r^2+a^2)^2-a^2 \Delta \sst
+\eeqn
+\beqn
+g^{tr}g^{rt}-g^{tt}g^{rr}&=&\frac{4r^2+\Delta(\Sigma+2r)}{\Sigma^2} = \frac{\beta}{\Sigma^2} \nn\\
+g^{\phi r}g^{r\phi}-g^{\phi\phi}g^{rr}&=&\frac{a^2\sst-\Delta}{\Sigma^2\sst} = -\frac{\Sigma-2r}{\Sigma^2\sst}
+\eeqn
+
+It is noticeable that the Kerr-Schild coordinate does not return to Schwarzschild coordinate when $a=0$, i.e.
+
+$g_{\mu\nu}(a=0)=\left(
+  \begin{array}{cccc}
+    -1+2/r &2/r & 0 & 0 \\
+    2/r & 1+2/r & 0 & 0 \\
+    0 & 0 & r^2 & 0 \\
+    0 & 0 & 0 & r^2\sin^2\theta \\
+  \end{array}
+\right)$
+
+and
+
+$g^{\mu\nu}(a=0)=\left(
+  \begin{array}{cccc}
+    -1-2/r &2/r & 0 & 0 \\
+    2/r & 1-2/r & 0 & 0 \\
+    0 & 0 & 1/r^2 & 0 \\
+    0 & 0 & 0 & \frac{1}{r^2\sst} \\
+  \end{array}
+\right)$
+
+
+
+\section{Conservation equations in Kerr space-time}
+\beq
+F_{\theta\phi}=-F_{\phi\theta}=A_{\phi,\theta}\quad F_{r\phi}=-F_{\phi r}=A_{\phi,r}
+\eeq
+\beq
+F_{tr}=-F_{rt}=\Omega A_{\phi,r}\quad F_{t\theta}=-F_{\theta t}=\Omega A_{\phi,\theta}
+\eeq
+\beq
+F_{r\theta}=-F_{\theta r}=\sqrt{-g}B^{\phi}
+\eeq
+\beq
+\Omega \equiv \Omega(A_\phi) \quad \sqrt{-g}F^{\theta r}\equiv I(A_\phi).
+\eeq
+Compare definitions of $B^\phi$ and $I$, it is clear that $I$ is positive when electric current flows into BH.
+
+\beq
+-\Omega\left[(\sqrt{-g}F^{tr})_{,r}+(\sqrt{-g}F^{t\theta})_{,\theta}\right]
++F_{r\theta}I'(A_\phi)
++\left[(\sqrt{-g}F^{\phi r})_{,r}+(\sqrt{-g}F^{\phi\theta})_{,\theta} \right]=0.
+\eeq
+
+\beqn
+B^\phi
+= -\frac{I\Sigma+(2r\Omega-a)\sin\theta A_{\phi,\theta}}{\Delta\Sigma\sin^2\theta}
+= -\frac{I\Sigma-(2r\Omega-a)\sst \Am}{\Delta\Sigma\sin^2\theta}
+\eeqn
+
+
+\beqn
+F_{tr}&=&\Omega \Ar\nn\\
+F^{tr}&=&g^{tt}(g^{rr}F_{tr}+g^{r\phi}F_{t\phi})+g^{tr}(g^{rt}F_{rt}+g^{r\phi}F_{r\phi}) \nn\\
+&=&(g^{tt}g^{rr}-g^{tr}g^{rt})F_{tr}+g^{tr}g^{r\phi}F_{r\phi} \nn\\
+&=&\left([g^{tt}g^{rr}-g^{tr}g^{rt}]\Omega+g^{tr}g^{r\phi} \right)\Ar
+\eeqn
+
+\beqn
+F_{\phi r}
+&=&- A_{\phi,r} \\
+F^{\phi r}
+&=&g^{\phi\alpha}g^{r\beta}F_{\alpha\beta}
+=g^{\phi r}(g^{rt}F_{rt}+g^{r\phi}F_{r\phi})+g^{\phi\phi}g^{rr}F_{\phi r}\\
+&=&(-\Omega g^{\phi r}g^{rt}+ g^{\phi r}g^{r\phi} -g^{\phi\phi}g^{rr})\Ar
+\eeqn
+
+\begin{align}
+& F_{\phi r}F^{\phi r} + F_{t r}F^{t r} \\
+&
+=(\Omega g^{\phi r}g^{rt}- g^{\phi r}g^{r\phi} +g^{\phi\phi}g^{rr})\Ar^2
++\left([g^{tt}g^{rr}-g^{tr}g^{rt}]\Omega^2+\Omega g^{tr}g^{r\phi} \right)\Ar^2 \nn\\
+&
+=\left([g^{tt}g^{rr}-g^{tr}g^{rt}]\Omega^2+ 2\Omega g^{tr}g^{r\phi}
++g^{\phi\phi}g^{rr}- g^{\phi r}g^{r\phi} \right) \Ar^2 \nn\\
+&
+=\left(-\frac{\beta}{\Sigma^2}\Omega^2+  \frac{4ra}{\Sigma^2}\Omega
++\frac{\Sigma-2r}{\Sigma^2\sst} \right) \Ar^2 \equiv -\frac{\Ar^2}{\Sigma\sst} \mathcal K(r,\theta; \Omega)
+\end{align}
+
+\beqn
+&&-\Omega(\sqrt{-g}F^{tr})_{,r}+(\sqrt{-g}F^{\phi r})_{,r} \leftarrow X\nn\\
+&=&-\Omega\left[ \g \left((g^{tt}g^{rr}-g^{tr}g^{rt})\Omega+g^{tr}g^{r\phi} \right)\Ar\right]_{,r}
++\left[ \g (-\Omega g^{\phi r}g^{rt}+ g^{\phi r}g^{r\phi} -g^{\phi\phi}g^{rr})\Ar\right]_{,r} \nn\\
+&=&
+-\Omega \g \left((g^{tt}g^{rr}-g^{tr}g^{rt})\Omega+g^{tr}g^{r\phi} \right)\Arr
+-\Omega \left[ \g \left((g^{tt}g^{rr}-g^{tr}g^{rt})\Omega+g^{tr}g^{r\phi} \right)\right]_{,r} \Ar \nn\\
+&&
++\g (-\Omega g^{\phi r}g^{rt}+ g^{\phi r}g^{r\phi} -g^{\phi\phi}g^{rr})\Arr
++\left[ \g (-\Omega g^{\phi r}g^{rt}+ g^{\phi r}g^{r\phi} -g^{\phi\phi}g^{rr})\right]_{,r}\Ar \nn\\
+&=&
+\g \left[-(g^{tt}g^{rr}-g^{tr}g^{rt})\Omega^2 -2 g^{tr}g^{r\phi}\Omega
+- (g^{\phi\phi}g^{rr}- g^{\phi r}g^{r\phi} )\right] \Arr \nn\\
+&&
+-\Omega \left[  \Omega \left(\g (g^{tt}g^{rr}-g^{tr}g^{rt})\right)_{,r} + \g (g^{tt}g^{rr}-g^{tr}g^{rt})\Omega_{,r}+\left(\g g^{tr}g^{r\phi} \right)_{,r}\right] \Ar \nn\\
+&&
+-\left[  \left(\g g^{\phi r}g^{rt}\right) \Omega_{,r}
++\left(\g g^{\phi r}g^{rt}\right)_{,r}\Omega
++\left(\g(g^{\phi\phi}g^{rr}- g^{\phi r}g^{r\phi})\right)_{,r}\right]\Ar \nn\\
+&=&
+-\g \left[(g^{tt}g^{rr}-g^{tr}g^{rt})\Omega^2 + 2 g^{tr}g^{r\phi}\Omega
++ (g^{\phi\phi}g^{rr}- g^{\phi r}g^{r\phi} )\right] \Arr \nn\\
+&&
+-\left[  \Omega^2 \left(\g (g^{tt}g^{rr}-g^{tr}g^{rt})\right)_{,r}
++ 2\left(\g g^{tr}g^{r\phi}\right)_{,r}\Omega
++ \left(\g(g^{\phi\phi}g^{rr}- g^{\phi r}g^{r\phi})\right)_{,r}\right] \Ar \nn\\
+&&
+-\left[ \left(\g (g^{tt}g^{rr}-g^{tr}g^{rt})\right)\Omega
++ \left(\g g^{\phi r}g^{rt}\right) \right]\Omega'\Ar^2 \nn\\
+&=&
+ \st \left[\frac{\beta}{\Sigma}\Omega^2
+- \frac{4ra}{\Sigma}\Omega
+- \frac{\Sigma-2r}{\Sigma\sst}\right] \Arr \nn\\
+&&
++\st \left[  \Omega^2 \left(\frac{\beta}{\Sigma}\right)_{,r}
+- \Omega \left(\frac{4ra}{\Sigma} \right)_{,r}
+-\left(\frac{\Sigma-2r}{\Sigma\sst}\right)_{,r}\right] \Ar \nn\\
+&&
++ \st \left[ \left(\frac{\beta}{\Sigma}\right) \Omega-\frac{2ra}{\Sigma}\right]\Omega'\Ar^2 \nn\\
+&=&
+ \st \left[\left(\frac{\beta}{\Sigma}\right)\Omega^2
+-\frac{4ra}{\Sigma}\Omega
+- \frac{1}{\sst}\left(1-\frac{2r}{\Sigma}\right)\right] \Arr \nn\\
+&&
++\st \left[  \Omega^2 \left(\frac{\beta}{\Sigma}\right)_{,r}
+-\Omega\left(\frac{4ra}{\Sigma}\right)_{,r}
++\frac{1}{\sst}\left(\frac{2r}{\Sigma}\right)_{,r}\right] \Ar \nn\\
+&&
++ \st \left[ \left(\frac{\beta}{\Sigma}\right) \Omega-\frac{2ar}{\Sigma}\right]\Omega'\Ar^2 \nn\\
+\eeqn
+
+\beqn
+\frac{X}{\st}
+&=&
+ \left[\left(r^2+a^2+\frac{2ra^2\sst}{\Sigma}\right)\Omega^2
+-\frac{4ra}{\Sigma}\Omega
+- \frac{1}{\sst}\left(1-\frac{2r}{\Sigma}\right)\right] \Arr \nn\\
+&&
++ \left[  \Omega^2 \left(r^2+a^2+\frac{2ra^2\sst}{\Sigma}\right)_{,r}
+-\Omega\left(\frac{4ra}{\Sigma}\right)_{,r}
++\frac{1}{\sst}\left(\frac{2r}{\Sigma}\right)_{,r}\right] \Ar \nn\\
+&&
++ \left[ \left(r^2+a^2+\frac{2ra^2\sst}{\Sigma}\right) \Omega-\frac{2ar}{\Sigma}\right]\Omega'\Ar^2
+\eeqn
+
+
+
+\beqn
+F_{t \theta }
+&=& \Omega A_{\phi,\theta} = \Omega (-\st \Am)\nn\\
+F^{t\theta}
+&=&g^{\theta\theta}(g^{tt}F_{t\theta}+g^{tr}F_{r\theta})
+= g^{\theta\theta}(g^{tt}\Omega \Ah +g^{tr}\g B^\phi) \nn\\
+\eeqn
+
+\beqn
+F_{r\theta}
+&=&\sqrt{-g}B^{\phi} \nn\\
+F_{r\theta} I'
+&=& \Sigma\st \left(-\frac{I\Sigma-(2r\Omega-a)\sst \Am}{\Delta\Sigma\sin^2\theta}\right) I'
+\eeqn
+
+\beqn
+F^{\phi\theta}
+&=&
+g^{\theta\theta}g^{\phi\alpha}F_{\alpha\theta}
+=g^{\theta\theta}(g^{\phi r}F_{r\theta}+g^{\phi\phi}F_{\phi\theta})
+=g^{\theta\theta}(g^{\phi r}\g B^\phi-g^{\phi\phi}\Ah)
+\eeqn
+
+\begin{align}
+& F_{t\theta}F^{t\theta} + F_{r\theta}F^{r\theta} + F_{\phi\theta}F^{\phi\theta} \\
+&
+= g^{\theta\theta}(g^{tt}\Omega \Ah +g^{tr}\g B^\phi) \Omega\Ah
+-I B^\phi - g^{\theta\theta}(g^{\phi r}\g B^\phi-g^{\phi\phi}\Ah)\Ah \nn\\
+&
+= g^{\theta\theta}(g^{tt}\Omega^2+g^{\phi\phi})\Ah^2
++ g^{\theta\theta}(g^{tr}\Omega-g^{\phi r})\sqrt{-g}B^\phi\Ah-IB^\phi \nn\\
+&
+= g^{\theta\theta}(g^{tt}\Omega^2+g^{\phi\phi})\Ah^2
++ \frac{2r\Omega-a}{\Sigma^2}\sqrt{-g}B^\phi\Ah-IB^\phi \nn \\
+&
+= g^{\theta\theta}(g^{tt}\Omega^2+g^{\phi\phi})\Ah^2
+- \left(\frac{2r\Omega-a}{\Sigma^2}\sqrt{-g}\Ah-I \right)
+\left(\frac{I\Sigma+(2r\Omega-a)\st\Ah}{\Delta\Sigma\sst}\right)\nn\\
+&
+= \left[g^{\theta\theta}(g^{tt}\Omega^2+g^{\phi\phi})- \frac{(2r\Omega-a)^2}{\Delta\Sigma^2}\right]\Ah^2
++\frac{I^2}{\Delta\sst} \nn\\
+&
+= \frac{1}{\Delta} \left[-\frac{\beta}{\Sigma^2}\Omega^2 +  \frac{4ra}{\Sigma^2}\Omega
++\frac{\Sigma-2r}{\Sigma^2\sst}  \right] \Ah^2 +\frac{I^2}{\Delta\sst} \nn\\
+&
+=-\frac{\Ah^2}{\Delta\Sigma\sst} \mathcal K(r,\theta; \Omega) + \frac{I^2}{\Delta\sst}
+\end{align}
+
+\begin{align}
+    \frac{1}{2}F\cdot F
+&= -\frac{\Ar^2}{\Sigma\sst} \mathcal K(r,\theta; \Omega)
+    -\frac{\Ah^2}{\Delta\Sigma\sst} \mathcal K(r,\theta; \Omega) + \frac{I^2}{\Delta\sst}\nn \\
+\frac{1}{2}( F\cdot F ) (\Sigma\sst)
+&= -\mathcal K(r,\theta; \Omega)\left(\Ar^2 +\frac{\Ah^2}{\Delta} \right) + \frac{\Sigma }{\Delta} I^2
+\end{align}
+
+\beqn
+&&-\Omega(\sqrt{-g}F^{t\theta})_{,\theta}+F_{r\theta}I'(A_\phi)
++(\sqrt{-g}F^{\phi\theta})_{,\theta} \leftarrow Y \nn\\
+&=&
+-\Omega\left[\sqrt{-g}g^{\theta\theta}(g^{tt}\Omega \Ah +g^{tr}\g B^\phi)  \right]_{,\theta} + \g B^\phi I'
++ \left[\g g^{\theta\theta}(g^{\phi r}\g B^\phi-g^{\phi\phi}\Ah)\right]_{,\theta}\nn\\
+&=&
+-\Omega\left[\g g^{\theta\theta}g^{tt}\Omega \Ah\right]_{,\theta}
+-\Omega\left[\g g^{\theta\theta}g^{tr}\g B^\phi \right]_{,\theta}
++ \g B^\phi I'\nn\\
+&&
++ \left[\g g^{\theta\theta}g^{\phi r}\g B^\phi\right]_{,\theta}
+-\left[\g g^{\theta\theta} g^{\phi\phi}\Ah\right]_{,\theta}\nn \\
+&=&
+-\Omega\left[\g g^{\theta\theta}g^{tt}\Omega \Ah\right]_{,\theta}
+-\left[\g g^{\theta\theta} g^{\phi\phi}\Ah\right]_{,\theta} \nn\\
+&&
+-\Omega\left[\g g^{\theta\theta}g^{tr}\g B^\phi \right]_{,\theta}
++ \g B^\phi I'
++ \left[\g g^{\theta\theta}g^{\phi r}\g B^\phi\right]_{,\theta}\nn\\
+&=&
+-\Omega\left[\g g^{\theta\theta}g^{tt}\Omega \Ah\right]_{,\theta}
+-\left[\g g^{\theta\theta} g^{\phi\phi}\Ah\right]_{,\theta} \nn\\
+&&
++(a-2r\Omega)\left[\sst B^\phi \right]_{,\theta}
++ \g B^\phi I' \nn\\
+&=&
+-\Omega\left[-(1+\frac{2r}{\Sigma})\Omega\st \Ah\right]_{,\theta}
+-\left[\frac{1}{\Sigma\st}\Ah\right]_{,\theta} \nn\\
+&&
++(a-2r\Omega)\left[\sst B^\phi \right]_{,\theta}
++ \g B^\phi I'\nn\\
+&=&
+-\Omega\left[(1+\frac{2r}{\Sigma})\Omega\sst\Am\right]_{,\theta}
++\left[\frac{1}{\Sigma}\Am\right]_{,\theta} \nn\\
+&&
++(a-2r\Omega)\left[\sst B^\phi \right]_{,\theta}
++ \g B^\phi I' \nn\\
+&=&
+\st\Omega\left[(1+\frac{2r}{\Sigma})\Omega\sst\Am\right]_{,\mu}
+-\st\left[\frac{1}{\Sigma}\Am\right]_{,\mu} \nn\\
+&&
++(a-2r\Omega)\left[\sst B^\phi \right]_{,\theta}
++ \g B^\phi I' \nn\\
+&=&
+\st\Omega\left[(1+\frac{2r}{\Sigma})\Omega\sst\Amm + \left( (1+\frac{2r}{\Sigma})\Omega\sst \right)_{,\mu}\Am\right]
+-\st\left[\left(\frac{1}{\Sigma}\right)\Amm + \left(\frac{1}{\Sigma}\right)_{,\mu} \Am \right] \nn\\
+&&
++(a-2r\Omega)\left[\sst B^\phi \right]_{,\theta}
++ \g B^\phi I' \nn\\
+&=&
+\st\left[\Omega^2\left(1+\frac{2r}{\Sigma}\right)\sst-\left(\frac{1}{\Sigma}\right) \right]\Amm\nn\\
+&&
++\st \left[ \Omega^2\left( (1+\frac{2r}{\Sigma})\sst \right)_{,\mu}-\left(\frac{1}{\Sigma}\right)_{,\mu}\right]\Am  \nn\\
+&&
++\st\left[\left(1+\frac{2r}{\Sigma}\right)\Omega\Omega'\sst\Am^2 \right]
+-\st(a-2r\Omega)\left(\sst B^\phi \right)_{,\mu}
++ \st\Sigma B^\phi I'
+\eeqn
+
+\beqn
+\frac{Y}{\st}
+&=&
+\left[\Omega^2\left(1+\frac{2r}{\Sigma}\right)\sst-\left(\frac{1}{\Sigma}\right) \right]\Amm\nn\\
+&&
++\left[ \Omega^2\left( (1+\frac{2r}{\Sigma})\sst \right)_{,\mu}-\left(\frac{1}{\Sigma}\right)_{,\mu}\right]\Am
++\left[\left(1+\frac{2r}{\Sigma}\right)\Omega\Omega'\sst\Am^2 \right]\nn\\
+&&
+-(a-2r\Omega)\left(\sst B^\phi \right)_{,\mu}
++ \Sigma B^\phi I'
+\eeqn
+
+\beqn
+&&
+-(a-2r\Omega)\left[\sst B^\phi \right]_{,\mu}
++ \Sigma B^\phi I'\nn\\
+&=&
+-(a-2r\Omega)\left[-\frac{I\Sigma-(2r\Omega-a)\sst \Am}{\Delta\Sigma} \right]_{,\mu}
++ \Sigma \left(-\frac{I\Sigma-(2r\Omega-a)\sst \Am}{\Delta\Sigma\sin^2\theta}\right) I'
+ \nn\\
+&=&
+- (a-2r\Omega)\left[-\frac{I}{\Delta} + \frac{(2r\Omega-a)\sst \Am}{\Delta\Sigma} \right]_{,\mu}
++ \Sigma\left(-\frac{I}{\Delta\sst}+\frac{(2r\Omega-a) \Am}{\Delta\Sigma}\right) I'\nn\\
+&=&
++ (2r\Omega-a)\left[-\frac{I'\Am}{\Delta} + \left(\frac{(2r\Omega-a)\sst \Am}{\Delta\Sigma}\right)_{,\mu} \right]
+-\frac{\Sigma}{\Delta\sst} II' +\frac{(2r\Omega-a) I' \Am}{\Delta}\nn\\
+&=&
++ (2r\Omega-a) \left(\frac{(2r\Omega-a)\sst \Am}{\Delta\Sigma}\right)_{,\mu}
+-\frac{\Sigma}{\Delta\sst} II' \nn\\
+&=&
+\frac{1}{\Delta}\left\{ (2r\Omega-a) \left(\frac{(2r\Omega-a)\sst \Am}{\Sigma}\right)_{,\mu}
+-\frac{\Sigma}{\sst} II' \right\}\nn\\
+&=&
+\frac{\Sigma}{\sst\Delta}\left\{ \frac{(2r\Omega-a)\sst}{\Sigma} \left(\frac{(2r\Omega-a)\sst \Am}{\Sigma}\right)_{,\mu}
+-II' \right\}
+\eeqn
+
+
+\beqn
+\frac{X+Y}{\st}
+&=&
+ \left[\left(\frac{\beta}{\Sigma}\right)\Omega^2
+-\frac{4ra}{\Sigma}\Omega
+- \frac{1}{\sst}\left(1-\frac{2r}{\Sigma}\right)\right] \Arr \nn\\
+&&
++ \left[  \Omega^2 \left(\frac{\beta}{\Sigma}\right)_{,r}
+-\Omega\left(\frac{4ra}{\Sigma}\right)_{,r}
++\frac{1}{\sst}\left(\frac{2r}{\Sigma}\right)_{,r}\right] \Ar \nn\\
+&&
++ \left[ \left(\frac{\beta}{\Sigma}\right) \Omega-\frac{2ar}{\Sigma}\right]\Omega'\Ar^2
++ \left(1+\frac{2r}{\Sigma}\right)\Omega\Omega'\sst\Am^2 \nn\\
+&&
++\left[\Omega^2\left(1+\frac{2r}{\Sigma}\right)\sst-\left(\frac{1}{\Sigma}\right) \right]\Amm\nn\\
+&&
++\left[ \Omega^2\left( (1+\frac{2r}{\Sigma})\sst \right)_{,\mu}-\left(\frac{1}{\Sigma}\right)_{,\mu}\right]\Am\nn\\
+&&
++\frac{\Sigma}{\sst\Delta}\left\{ \frac{(2r\Omega-a)\sst}{\Sigma} \left(\frac{(2r\Omega-a)\sst \Am}{\Sigma}\right)_{,\mu}
+-II' \right\}
+\eeqn
+
+\beqn
+(X+Y)\st
+&=&
+ \left[\left(\frac{\beta}{\Sigma}\right)\Omega^2\sst
+-\frac{4ra}{\Sigma}\Omega\sst
+- \left(1-\frac{2r}{\Sigma}\right)\right] \Arr \nn\\
+&&
++ \left[  \Omega^2\sst \left(\frac{\beta}{\Sigma}\right)_{,r}
+-\Omega\sst\left(\frac{4ra}{\Sigma}\right)_{,r}
++\left(\frac{2r}{\Sigma}\right)_{,r}\right] \Ar \nn\\
+&&
++ \left[ \left(\frac{\beta}{\Sigma}\right) \Omega-\frac{2ar}{\Sigma}\right]\Omega'\sst\Ar^2
++ \left(1+\frac{2r}{\Sigma}\right)\Omega\Omega'\sin^4\theta \Am^2\nn\\
+&&
++\left[\Omega^2\left(1+\frac{2r}{\Sigma}\right)\sst-\left(\frac{1}{\Sigma}\right) \right]\sst\Amm\nn\\
+&&
++\left[ \Omega^2\left( \left(1+\frac{2r}{\Sigma}\right)\sst \right)_{,\mu}-\left(\frac{1}{\Sigma}\right)_{,\mu}\right]\sst\Am\nn\\
+&&
++ \frac{(2r\Omega-a)\sst}{\Delta} \left(\frac{(2r\Omega-a)\sst \Am}{\Sigma}\right)_{,\mu}
+-\frac{\Sigma}{\Delta}II'
+\eeqn
+
+\beqn
+\Amm \leftarrow
+&&
+\sst\left[\left(1+\frac{2r}{\Sigma}\right)\Omega^2 \sst-\frac{1}{\Sigma}
++ \frac{(2r\Omega-a)^2}{\Delta\Sigma}\sst\right] \nn \\
+&=&
+\sst\left[ \Omega^2\sst \left(1+\frac{2r}{\Sigma}+\frac{4r^2}{\Delta\Sigma}\right)
+-\frac{4ar\Omega}{\Delta\Sigma}\sst - \frac{1}{\Sigma} + \frac{a^2\sst}{\Delta\Sigma} \right]\nn \\
+&=&
+\sst\left[ \frac{\beta}{\Delta\Sigma} \Omega^2\sst -\frac{4ar\Omega}{\Delta\Sigma}\sst -\frac{\Sigma-2r}{\Delta\Sigma}\right]\nn\\
+&=&
+\frac{\sst}{\Delta}\left[ \frac{\beta}{\Sigma} \Omega^2\sst -\frac{4ar\Omega}{\Sigma}\sst -\left(1-\frac{2r}{\Sigma}\right)\right]
+\eeqn
+
+\beqn
+\Am \leftarrow
+&&
+ \left[ \Omega^2\left( \left(1+\frac{2r}{\Sigma}\right)\sst \right)_{,\mu}
+-\left(\frac{1}{\Sigma}\right)_{,\mu}
++\frac{(2r\Omega-a)^2}{\Delta} \left(\frac{\sst}{\Sigma}\right)_{,\mu}\right]\sst \nn \\
+&=&
+\left[ \Omega^2\left( \frac{\beta}{\Delta\Sigma}\sst \right)_{,\mu}
+-\Omega\left(\frac{4ar}{\Delta\Sigma}\sst\right)_{,\mu}
+-\left(\frac{\Sigma-2r}{\Delta\Sigma}\right)_{,\mu}\right]\sst \nn \\
+&=&
+\left[ \Omega^2\left( \frac{\beta}{\Sigma}\sst \right)_{,\mu}
+-\Omega\left(\frac{4ar}{\Sigma}\sst\right)_{,\mu}
+-\left(\frac{\Sigma-2r}{\Sigma}\right)_{,\mu}\right]\frac{\sst}{\Delta} \nn \\
+% &=&
+% -\left[\left(1+\frac{2r(r^2+a^2)}{\Sigma^2} \right)\Omega^2 -\frac{a^2}{\Sigma^2}
+% +\frac{(2r\Omega-a)^2}{\Delta} \frac{ r^2 + a^2}{\Sigma^2}  \right] 2\mu\sst
+\eeqn
+
+
+\beqn
+\Am^2 \leftarrow
+&&
+\left(1+\frac{2r}{\Sigma}\right)\Omega\Omega'\sin^4\theta
++\frac{(2r\Omega-a)}{\Delta}\frac{2r\Omega'}{\Sigma}\sin^4\theta \nn \\
+&=&
+\Omega'\sin^4\theta \left[ \Omega\left(1+\frac{2r}{\Sigma}
++\frac{4r^2}{\Delta\Sigma}\right)-\frac{2ra}{\Delta\Sigma}\right] \nn \\
+&=&
+\frac{\Omega'\sin^4\theta}{\Delta}\left[ \frac{\beta}{\Sigma}\Omega -\frac{2ra}{\Sigma}\right]
+\eeqn
+
+Sorted GS equation
+\beqn
+&&\phantom{+}
+\left[\frac{\beta}{\Sigma}\Omega^2 \sst
+-\frac{4ra}{\Sigma}\Omega \sst
+-\left(1-\frac{2r}{\Sigma}\right)\right] \left(\Arr + \frac{\sst}{\Delta } \Amm \right)\nn \\
+&&
++ \left[  \Omega^2 \sst\left(\frac{\beta}{\Sigma}\right)_{,r}
+-\Omega\sst\left(\frac{4ra}{\Sigma}\right)_{,r}
++\left(\frac{2r}{\Sigma}\right)_{,r}\right] \Ar \nn\\
+&&
++\left[ \Omega^2\left( \frac{\beta}{\Sigma}\sst \right)_{,\mu}
+-\Omega\left(\frac{4ar}{\Sigma}\sst\right)_{,\mu}
++\left(\frac{2r}{\Sigma}\right)_{,\mu}\right]\frac{\sst}{\Delta}\Am \nn \\
+&&
++ \left[ \left(\frac{\beta}{\Sigma}\right) \Omega-\frac{2ar}{\Sigma}\right]
+\Omega'\sst\left(\Ar^2 + \frac{\sst}{\Delta}\Am^2\right)
+- \frac{\Sigma}{\Delta} II' = 0
+\eeqn
+
+or in a more compact form
+\beqn
+&&\phantom{+}
+ \left[\Arr + \frac{\sst}{\Delta}\Amm \right]  \mathcal K(r,\theta; \Omega )\nn \\
+&&
++\left[\Ar \partial_r^\Omega  +  \frac{\sst}{\Delta}\Am \partial_\mu^\Omega\right] \mathcal K(r,\theta; \Omega ) \nn \\
+&&
++ \frac{1}{2}\left[\Ar^2 + \frac{\sst}{\Delta}\Am^2\right]  \Omega' \partial_\Omega \mathcal K(r,\theta; \Omega )\nn \\
+&&
+- \frac{\Sigma}{\Delta}II' = 0,
+\eeqn
+where
+\beq
+\mathcal K(r,\theta; \Omega ) =
+\left[\frac{\beta}{\Sigma}\Omega^2 \sst
+-\frac{4ra}{\Sigma}\Omega \sst
+-\left(1-\frac{2r}{\Sigma}\right)\right]
+\eeq
+
+\begin{align}
+    &\bm E^2 = \frac{\beta}{\Sigma^2}\left(\frac{2ar}{\beta}-\Omega \right)^2
+    \left(\Ar^2 + \frac{\sst}{\Delta}\Am^2\right) \nn \\
+    &\bm B^2 = \frac{\Delta}{\beta \sst}\left(\Ar^2 + \frac{\sst}{\Delta}\Am^2 + \frac{I^2\beta}{\Delta^2} \right)
+\end{align}
+
+\begin{align}
+    (B^2-E^2)\Sigma\sst
+    &= \frac{\Sigma}{\Delta}I^2 + \left(\Ar^2 + \frac{\sst}{\Delta}\Am^2\right)\left(\frac{\Delta\Sigma}{\beta}
+    -\frac{\beta\sst}{\Sigma}\left(\frac{2ar}{\beta}-\Omega \right)^2\right) \nn \\
+    &= -\mathcal K \left(\Ar^2 + \frac{\sst}{\Delta}\Am^2 \right) + \frac{\Sigma}{\Delta}I^2
+\end{align}
+
+\begin{align}
+    (B^2+E^2)\Sigma\sst
+    &= \frac{\Sigma}{\Delta}I^2 + \left(\Ar^2 + \frac{\sst}{\Delta}\Am^2\right)\left(\frac{\Delta\Sigma}{\beta}
+    +\frac{\beta\sst}{\Sigma}\left(\frac{2ar}{\beta}-\Omega \right)^2\right) \nn \\
+    &= \left(\mathcal K + \frac{\Delta\Sigma}{\beta}\right) \left(\Ar^2 + \frac{\sst}{\Delta}\Am^2 \right) + \frac{\Sigma}{\Delta}I^2
+\end{align}
+
+% $\Rightarrow \Delta\Sigma/\beta + 2 \mathcal K > 0$
+
+At the equator and with ILS, $\Ar = 0, \sin\theta = 1$,
+\beq
+\frac{B^2-E^2}{B^2+E^2} = \frac{-\mathcal K \Am^2 + {\Sigma}I^2}{\left(\mathcal K + \Delta\Sigma/\beta\right)\Am^2 + {\Sigma}I^2 }
+\eeq
+
+At ILS, $\Am = 0$
+\beq
+\frac{B^2-E^2}{B^2+E^2} = 1
+\eeq
+
+At $r = r_+$,
+\beq
+\frac{B^2-E^2}{B^2+E^2} = 0
+\eeq
+
+$\Am = \Sigma I / 2r(\Omega-\WH) = - (r_+^2 /a) I $,
+\begin{align}
+&-\mathcal K \Am^2 + {\Sigma}I^2 \\
+&= \left(1-\frac{2}{r_+}\right)\frac{r_+^4}{(2r_+(\Omega-\WH))^2} I ^2 + r_+^2 I^2 \\
+&=-\left(1-\frac{2}{r_+}\right)\frac{r_+^4}{r_+^2-2r_+} \frac{I ^2}{(\Omega/\WH-1)^2} + r_+^2 I^2 \\
+&= r_+^2 I^2 \left[1-\frac{1}{(1-\Omega/\WH)^2} \right]
+\end{align}
+\subsection{Cross Check with Lei Huang's (10)}
+$\Arr \checkmark, \quad \Amm \checkmark, \quad \Ar^2 \checkmark, \quad \Am^2 \checkmark$
+
+$\Ar$
+\begin{align}
+\Omega^2 \rightarrow
+-\left(\frac{\beta_{,r}}{\beta} - \frac{\Sigma_{,r}}{\Sigma} \right)\frac{\beta \sst}{\Sigma}
+= -\sst \left(\frac{\beta_{,r}}{\Sigma} - \frac{\Sigma_{,r}}{\Sigma^2} \right)
+= -\sst \left(\frac{\beta}{\Sigma}\right)_{,r} \checkmark
+\end{align}
+
+\begin{align}
+\Omega \rightarrow
+\frac{4ar\sst}{\Sigma}  \left(\frac{1}{r}-\frac{\Sigma_{,r}}{\Sigma} \right)
+= \sst\left(\frac{4ar}{\Sigma}\right)_{,r} \checkmark
+\end{align}
+
+\begin{align}
+1 \rightarrow
+-\frac{2r}{\Sigma} \left(\frac{\beta_{,r}}{\beta} - \frac{\Sigma_{,r}}{\Sigma} \right)
++\frac{2r}{\Sigma}\left(\frac{\beta_{,r}}{\beta}-\frac{1}{r} \right)
+= -\frac{2r}{\Sigma}  \left(\frac{1}{r}-\frac{\Sigma_{,r}}{\Sigma} \right)
+= -\left(\frac{2r}{\Sigma} \right)_{,r} \checkmark
+\end{align}
+
+\beq
+s^2 \Amm = \Ahh - \frac{c}{s} \Ah
+\eeq
+
+$\Am$, considering $f_{,\theta} \Ah = \sst f_{,\mu}\Am$
+
+\begin{align}
+\Omega^2 \rightarrow
+&-\frac{\beta \sst}{\Delta\Sigma}
+\left(2\frac{\ct}{\st} + \frac{\beta_{,\theta}}{\beta} -\frac{\Sigma_{,\theta}}{\Sigma}\right)\nn \\
+&= -\frac{1}{\Delta}\left(\frac{\beta (\sst)_{,\theta}}{\Sigma}
++\sst (\frac{\beta_{,\theta}}{\Sigma}-\frac{\beta\Sigma_{,\theta}}{\Sigma^2}) \right)\nn \\
+&=  -\frac{1}{\Delta}\left(\frac{\beta (\sst)_{,\theta}}{\Sigma}
++\sst (\frac{\beta}{\Sigma})_{,\theta} \right) \nn\\
+&= -\frac{1}{\Delta} \left( \frac{\beta\sst}{\Sigma}\right)_{,\theta} \checkmark
+\end{align}
+
+\begin{align}
+\Omega \rightarrow
+&\frac{4ar\sst}{\Delta\Sigma}\left(-\frac{\beta_{,\theta}}{\beta} +
+2\frac{\ct}{\st} + \frac{\beta_{,\theta}}{\beta} -\frac{\Sigma_{,\theta}}{\Sigma}\right) \nn\\
+&=\frac{4ar\sst}{\Delta\Sigma}\left( 2\frac{\ct}{\st} -\frac{\Sigma_{,\theta}}{\Sigma}\right) \nn\\
+&=\frac{4ar}{\Delta}\left( \frac{\sst}{\Sigma}\right)_{,\theta} \checkmark
+\end{align}
+
+\begin{align}
+1 \rightarrow \frac{1}{\Delta}\frac{2r\Sigma_{,\theta}}{\Sigma^2}
+= -\frac{1}{\Delta}\left(\frac{2r}{\Sigma} \right)_{,\theta} \checkmark
+\end{align}
+
+\subsection{Znajek Horizon Condition}
+
+\beq
+    I = \frac{2r(\Omega-\WH)\sst}{\Sigma} \Am \Big|_{r=r_+}
+\eeq
+Def $\mathcal I = I / A_\phi^{\rm H}, \mathcal A = A_\phi / A_\phi^{\rm H}$,
+where $\mathcal A $ falls in $[0,1]$
+\beq
+    \mathcal I = \frac{2r(\Omega-\WH)\sst}{\Sigma} \mathcal A_{,\mu}\Big|_{r=r_+}
+\eeq
+Usually, $\Omega|_{\mu = 1} = \WH/2$, and $\mathcal I|_{\mu = 1} = 0$.
+Given any $\mathcal I(\mathcal A)$ and $\Omega(\mathcal A)$,
+there exists a solution $\mathcal A(\mu) $ to above equation with boundary condition
+$\mathcal A|_{\mu=0} = 1, \mathcal A|_{\mu=1} = 0$ ? The answer is no.
+\\
+
+If we write $\mathcal I = 2(\WH - \Omega) f(\mathcal A)$, then
+\beq
+    f(\mathcal A) = -\frac{r_+ \sst}{r_+^2 + a^2\mu^2} \mathcal A_{,\mu}
+\eeq
+i.e.
+\beq
+    \frac{d\mathcal A}{f(\mathcal A)} = -\frac{r_+^2 + a^2\mu^2}{r_+ (1-\mu^2)} d\mu
+    = -\left(\frac{2}{1-\mu^2} - \frac{a^2}{r_+}\right) d\mu
+\eeq
+we may formally write the solution as
+\beq
+\int_1^{\mathcal A(\mu)}\frac{d\mathcal A}{f(\mathcal A)}
+ = -\ln \frac{1+\mu}{1-\mu} + \frac{a^2}{r_+}\mu\Big|_0^\mu
+ = \ln \frac{1-\mu}{1+\mu} + \frac{a^2}{r_+}\mu
+\eeq
+When $\mu = 0$, both sides are equal to zero,
+if $1/f(\mathcal A)$ does not diverge or diverge slowly there.
+For example, finite $f(\mathcal A = 1)$ or $f(\mathcal A = 1^-) \sim \sqrt{1-\mathcal A}$ are allowed.
+When $\mu = 1$, RHS is divergent.
+To deal with the divergence, we write the equation as
+\beq
+\label{eq:fs}
+e^{\int_1^{\mathcal A(\mu)}\frac{d\mathcal A}{f(\mathcal A)}}
+ = e^{\ln \frac{1-\mu}{1+\mu} + \frac{a^2}{r_+}\mu}
+ = \frac{1-\mu}{1+\mu} \times e^{\frac{a^2}{r_+}\mu}
+\eeq
+as a result,
+\beq
+e^{\int_1^0\frac{d\mathcal A}{f(\mathcal A)}} = e^{-\int_0^1\frac{d\mathcal A}{f(\mathcal A)}} = 0
+\eeq
+which implies $f(\mathcal A)|_{\mu = 1} = f(\mathcal A = 0) = 0$. $\checkmark$
+
+Solution can be obtained from eq.(\ref{eq:fs}):
+\beq
+    F(\mathcal A) \equiv e^{\int_1^{\mathcal A}\frac{d\mathcal A}{f(\mathcal A)}} \quad
+    G(\mu) \equiv \frac{1-\mu}{1+\mu} \times e^{\frac{a^2}{r_+}\mu}
+\eeq
+Both functions $F(\mathcal A)$ and $G(\mu) $ can be computed,
+and obviously $\mathcal A(\mu)$ is obtained by enabling $F(\mathcal A) = G(\mu)$.
+
+\subsection{Variable Transform and Finite Difference}
+
+\beq
+    R = 1-\frac{1}{1+r} \qquad 1+r = \frac{1}{1-R} \qquad R_{,r} = \frac{1}{(1+r)^2} = (1-R)^2
+\eeq
+
+\begin{align}
+    \Ar &= \AR (1-R)^2 \nn\\
+    \Arr&=   [\AR (1-R)^2]_{,R} (1-R)^2 = \ARR (1-R)^4 - 2 \AR (1-R)^3
+\end{align}
+
+
+
+\begin{align}
+    C_{RR} \ARR + C_{\mu\mu} \Amm + C_R \AR + C_\mu \Am = S
+\end{align}
+where
+\begin{align}
+    C_{RR} &= (1-R)^4 C_{rr} = (1-R)^4 \mathcal K  \nn \\
+    C_{R}  &= (1-R)^2 C_r - 2  (1-R)^3 C_{rr} = (1-R)^2 C_r - 2  (1-R)^3 \mathcal K
+\end{align}
+
+
+
+{\bf Finite Difference, $j\rightarrow \mu$, $l\rightarrow R$}
+
+\begin{align}
+    &C_{RR}\frac{ A_{j,l+1}-2A_{j,l}+ A_{j,l-1} }{\delta R^2}
+   +C_{\mu\mu}\frac{ A_{j+1,l}-2A_{j,l}+ A_{j-1,l} }{\delta \mu^2} \nn \\
+   &+ C_{R\mu}\frac{(A_{j+1,l+1} - A_{j+1,l-1}) - (A_{j-1,l+1} - A_{j-1,l-1})}{4\delta R\delta \mu}\nn \\
+   &+C_R \frac{ A_{j,l+1}- A_{j,l-1} }{2\delta R}
+   +C_\mu \frac{ A_{j+1,l}- A_{j-1,l} }{2\delta \mu} = S_{j,l}
+\end{align}
+
+\begin{align}
+&\phantom{+}
+      (A_{j,l+1}-2A_{j,l}+ A_{j,l-1})C_{RR} \frac{\delta^2}{\delta R^2}
+   + (A_{j+1,l}-2A_{j,l}+ A_{j-1,l}) C_{\mu\mu} \frac{\delta^2}{\delta \mu^2}\nn \\
+&  + (A_{j+1,l+1}+ A_{j-1,l-1} - A_{j+1,l-1} - A_{j-1,l+1}) C_{R\mu}  \frac{\delta^2}{4\delta R\delta \mu}\nn\\
+&  + (A_{j,l+1}- A_{j,l-1})C_R  \frac{\delta^2}{2\delta R}
+   + (A_{j+1,l}- A_{j-1,l})C_\mu \frac{\delta^2}{2\delta \mu}   = S_{j,l} \delta^2
+\end{align}
+
+\begin{align}
+\mathcal L A
+&= a_{j,l} A_{j+1,l} + b_{j,l} A_{j-1,l} + c_{j,l} A_{j,l+1} + d_{j,l} A_{j,l-1} \nn\\
+&+ w_{j,l} (A_{j+1,l+1} - A_{j+1,l-1} - A_{j-1,l+1} + A_{j-1,l-1}) + e_{j,l} A_{j,l} - f_{j,l}=0
+\end{align}
+
+\begin{align}
+    a &= \frac{\delta^2}{\delta \mu^2} C_{\mu\mu} + \frac{\delta^2}{2\delta \mu} C_\mu \nn\\
+    b &= \frac{\delta^2}{\delta \mu^2} C_{\mu\mu} - \frac{\delta^2}{2\delta \mu} C_\mu \nn\\
+    c &= \frac{\delta^2}{\delta R^2} C_{RR}  + \frac{\delta^2}{2\delta R} C_R \nn\\
+    d &= \frac{\delta^2}{\delta R^2} C_{RR}  - \frac{\delta^2}{2\delta R} C_R \nn\\
+    w &= \frac{\delta^2}{4\delta R\delta \mu}C_{R\mu}   \nn \\
+    e &= -2\left( \frac{\delta^2}{\delta R^2} C_{RR} + \frac{\delta^2}{\delta \mu^2} C_{\mu\mu}\right)\nn \\
+    f &=  S_{j,l} \delta^2  = \frac{\Sigma}{\Delta} II' \delta^2
+\end{align}
+
+\beq
+A_{j,l}^{\rm new }
+= A_{j,l} - \frac{\mathcal L A_{j,l}}{\partial (\mathcal L A_{j,l})/\partial A_{j,l} }
+= A_{j,l} - \frac{\mathcal L A_{j,l}}{e_{j,l} + \partial (- f_{j,l})/\partial A_{j,l} }
+\eeq
+
+% \subsection{Poly Fitting}
+%
+% \begin{align}
+% &\Omega = \WH/2 + O(A_\phi) \nn\\
+% \rightarrow\quad
+% &I = 2\Omega A_\phi = (\WH + O(A_\phi))A_\phi \nn\\
+% \rightarrow\quad
+% &I'= 2\Omega  + 2\Omega' A_\phi = \WH + O(A_\phi) \nn\\
+% \rightarrow\quad
+% &II'= \WH^2 A_\phi + O(A_\phi^2)
+% \end{align}
+%
+% \beq
+% II'= \WH^2 A_\phi \left(1 + \sum_{n=1} f_n A_\phi^n\right)
+% \eeq
+
+\subsection{Returning Current}
+\beq
+I^2/2 = \int_0^{A_0} II' dA
+\eeq
+Returning Current, assuming $II' = \alpha \times (A_0 - A)(A_0+\delta A_0 -A)$
+\beq
+- I^2/2 = \int_{A_0}^{A_0 + \delta A_0} II' dA = -\frac{\alpha}{6} \delta A_0^3
+\Rightarrow \alpha = (6/\delta A_0^3)\times I^2/2
+\eeq
+
+OR $II' = \alpha = I^2/2/\delta A_0$.
+
+
+% \subsection{L'hopital's Rule }
+% \begin{align}
+%     C_{rr}\Arr + C_{\mu\mu} \Amm + C_r\Ar + C_\mu\Am = S
+% \end{align}
+% where $C_{rr} = \mathcal K, C_{\mu\mu} = \mathcal (\sst/\Delta) \mathcal K, ...$
+% In the limit of $\mathcal K = 0$
+% \begin{align}
+%     &\Arr + \frac{\sst}{\Delta} \Amm + \frac{[C_r \Ar + C_\mu \Am - S]_{,r}}{\mathcal K_{,r}} \Big|_{\mathcal K =0} = 0\nn\\
+%     &\Arr + \frac{\sst}{\Delta} \Amm + \frac{[C_r \Ar + C_\mu \Am - S]_{,\mu}}{\mathcal K_{,\mu}} \Big|_{\mathcal K =0} = 0
+% \end{align}
+% Explicitely,
+% \begin{align}
+%     &\left(1 + \frac{C_r}{\mathcal K_{,r}}\right)\Arr + \frac{\sst}{\Delta} \Amm
+%     +\frac{C_{r,r}}{\mathcal K_{,r}} \Ar + \frac{C_{\mu,r}}{\mathcal K_{,r}}\Am
+%     +\frac{C_\mu }{\mathcal K_{,r}} A_{,r\mu} -\frac{S_{,r}}{\mathcal K_{,r}}\Big|_{\mathcal K =0} = 0\nn\\
+%     &\Arr + \left(\frac{\sst}{\Delta} +\frac{C_\mu}{\mathcal K_{,\mu}}\right)\Amm
+%     +\frac{C_{\mu,\mu}}{\mathcal K_{,\mu}} \Am + \frac{C_{r,\mu}}{\mathcal K_{,\mu}}\Ar
+%     +\frac{C_r }{\mathcal K_{,\mu}} A_{,r\mu}-\frac{S_{,\mu}}{\mathcal K_{,\mu}}\Big|_{\mathcal K =0}  = 0
+% \end{align}
+% Weighted sum eliminating terms $A_{,r\mu}$
+% \begin{align}
+%     &(\mathcal K_{,r} C_r + C_r^2 - \mathcal K_{,\mu} C_\mu)\Arr
+%         +\left[\frac{\sst}{\Delta}(\mathcal K_{,r} C_r-\mathcal K_{,\mu} C_\mu)-C_\mu^2\right]\Amm \nn\\
+%     &+(C_r C_{r,r}-C_\mu C_{r,\mu})\Ar
+%     +(C_r C_{\mu,r}-C_\mu C_{\mu,\mu})\Am
+%     -(C_r S_{,r} - C_\mu S_{,\mu}) \Big|_{\mathcal K = 0} = 0
+% \end{align}
+% where
+% \begin{align}
+%     \mathcal K_{,r} &= \partial_r^\Omega \mathcal K  + \partial_\Omega \mathcal K\ \Omega_{,r} \quad
+%     \mathcal K_{,\mu} = \partial_\mu^\Omega \mathcal K  + \partial_\Omega \mathcal K\  \Omega_{,\mu} \nn \\
+%     C_r &= \partial_r^\Omega \mathcal K  + \frac{1}{2}\partial_\Omega \mathcal K\ \Omega_{,r} \quad
+%     C_\mu = \frac{\sst}{\Delta}\left\{\partial_\mu^\Omega \mathcal K  + \frac{1}{2}\partial_\Omega \mathcal K\  \Omega_{,\mu} \right\}
+% \end{align}
+%
+% {\bf First Consider a Simplified Version : $\Omega = {\rm const}$}
+% \begin{align}
+%     C_r &= \partial_r^\Omega \mathcal K =  \mathcal K_{,r}  \qquad
+%     C_\mu = \frac{\sst}{\Delta}\partial_\mu^\Omega \mathcal K = \frac{\sst}{\Delta}\mathcal K_{,\mu}
+% \end{align}
+%
+% \begin{align}
+%     &
+%     \left(2\mathcal K_{,r}^2 -  \frac{\sst}{\Delta}\mathcal K_{,\mu}^2 \right)\Arr
+%         + \frac{\sst}{\Delta}\left(\mathcal K_{,r}^2 - 2\frac{\sst}{\Delta} \mathcal K_{,\mu}^2 \right)\Amm \nn\\
+%     &
+%     +\left(\mathcal K_{,r}\mathcal K_{,rr} - \frac{\sst}{\Delta}\mathcal K_{,\mu} \mathcal K_{,r\mu}\right)\Ar
+%     +\left[\mathcal K_{,r} (\frac{\sst}{\Delta}\mathcal K_{,\mu})_{,r}
+%     -\frac{\sst}{\Delta}\mathcal K_{,\mu} (\frac{\sst}{\Delta}\mathcal K_{,\mu})_{,\mu}\right]\Am\nn\\
+%     &
+%     -(C_r S_{,r} - C_\mu S_{,\mu}) \Big|_{\mathcal K = 0} = 0
+% \end{align}
+%
+%
+% {\bf  Now Full Version}
+% \begin{align}
+%     C_r &= \partial_r^\Omega \mathcal K  +  \frac{1}{2} \partial_\Omega \mathcal K\ \Omega_{,r}
+%         = \partial_r^\Omega \mathcal K  + \left[\frac{\beta}{\Sigma}\Omega \sst -\frac{2ra}{\Sigma} \sst\right] \Omega_{,r}\nn \\
+%     C_\mu &= \frac{\sst}{\Delta}\left\{ \partial_\mu^\Omega \mathcal K  + \frac{1}{2}  \partial_\Omega \mathcal K\  \Omega_{,\mu}
+%         = \partial_\mu^\Omega \mathcal K  + \left[\frac{\beta}{\Sigma}\Omega\sst -\frac{2ra}{\Sigma}\sst \right] \Omega_{,\mu}\right\}
+% \end{align}
+%
+% \begin{align}
+%     C_{r,r} \
+%     &= (\partial_r^\Omega + \Omega_{,r}\partial_\Omega)  \partial_r^\Omega \mathcal K
+%     + \partial_r^\Omega \left[ \frac{1}{2} \partial_\Omega \mathcal K\right] \Omega_{,r}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,r}^2
+%     + \left[ \frac{1}{2} \partial_\Omega \mathcal K\right]  \Omega_{,rr} \nn \\
+%     &= \partial_r^\Omega   \partial_r^\Omega \mathcal K
+%     + 1.5 \Omega_{,r}[\partial_r^\Omega  \partial_\Omega \mathcal K]
+%     + \left[ 0.5 \partial_\Omega \mathcal K\right] \Omega_{,rr}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,r}^2\nn \\
+%     C_{r,\mu}
+%     &=(\partial_\mu^\Omega + \Omega_{,\mu}\partial_\Omega) \partial_r^\Omega \mathcal K
+%     + \partial_\mu^\Omega \left[ \frac{1}{2} \partial_\Omega \mathcal K\right]  \Omega_{,r}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,r}\Omega_{,\mu}
+%     + \left[ \frac{1}{2} \partial_\Omega \mathcal K\right] \Omega_{,r\mu}\nn \\
+%     &=\partial_\mu^\Omega \partial_r^\Omega \mathcal K
+%     + ( \Omega_{,\mu} \partial_r^\Omega + 0.5\Omega_{,r} \partial_\mu^\Omega) \left[\partial_\Omega \mathcal K\right]
+%     + \left[ 0.5 \partial_\Omega \mathcal K\right]\Omega_{,r\mu}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,r}\Omega_{,\mu}\nn \\
+%     C_{\mu,\mu}
+%     &= \frac{\sst}{\Delta}\left\{
+%     (\partial_\mu^\Omega + \Omega_{,\mu}\partial_\Omega) \partial_\mu^\Omega \mathcal K
+%     + \partial_\mu^\Omega \left[ \frac{1}{2} \partial_\Omega \mathcal K\right]  \Omega_{,\mu}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,\mu}^2
+%     + \left[ \frac{1}{2} \partial_\Omega \mathcal K\right]\Omega_{,\mu\mu} \right\}\nn \\
+%     &-\frac{2\mu}{\Delta} \left\{ \partial_\mu^\Omega \mathcal K
+%     + \frac{1}{2}  \partial_\Omega \mathcal K\  \Omega_{,\mu} \right\} \nn\\
+%     &= \frac{\sst}{\Delta}\left\{
+%     \partial_\mu^\Omega  \partial_\mu^\Omega \mathcal K
+%     + 1.5\Omega_{,\mu}[\partial_\mu^\Omega \partial_\Omega \mathcal K]
+%     + \left[ 0.5 \partial_\Omega \mathcal K\right]\Omega_{,\mu\mu}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,\mu}^2 \right\}             \nn\\
+%     &-\frac{2\mu}{\Delta} \left\{ \partial_\mu^\Omega \mathcal K
+%     + \frac{1}{2}  \partial_\Omega \mathcal K\  \Omega_{,\mu} \right\} \nn \\
+%     C_{\mu,r}
+%     &= \frac{\sst}{\Delta}\left\{
+%     (\partial_r^\Omega + \Omega_{,r}\partial_\Omega)\partial_\mu^\Omega \mathcal K
+%     + \partial_r^\Omega \left[ \frac{1}{2} \partial_\Omega \mathcal K\right] \Omega_{,\mu}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,\mu}\Omega_{,r}
+%     + \left[ \frac{1}{2} \partial_\Omega \mathcal K\right]\Omega_{,\mu r}  \right\} \nn \\
+%     & + \left(\frac{\sst}{\Delta}\right)_{,r} \left\{ \partial_\mu^\Omega \mathcal K  + \frac{1}{2}  \partial_\Omega \mathcal K\  \Omega_{,\mu}\right\} \nn\\
+%     &= \frac{\sst}{\Delta}\left\{ \partial_r^\Omega \partial_\mu^\Omega \mathcal K
+%     + (\Omega_{,r}\partial_\mu^\Omega + 0.5 \Omega_{,\mu}\partial_r^\Omega) \left[ \partial_\Omega \mathcal K\right]
+%     + \left[ 0.5 \partial_\Omega \mathcal K\right]\Omega_{,\mu r}
+%     + \frac{\beta}{\Sigma} s^2 \Omega_{,\mu}\Omega_{,r} \right\} \nn \\
+%     & + \left(\frac{\sst}{\Delta}\right)_{,r} \left\{ \partial_\mu^\Omega \mathcal K  + \frac{1}{2}  \partial_\Omega \mathcal K\  \Omega_{,\mu}\right\} \nn\\
+% \end{align}
+
+\subsection{LS Boundary}
+\begin{align}
+    (1-R)^2 C_r \AR + C_\mu \Am = S |_{\mathcal K = 0}
+\end{align}
+
+\begin{align}
+d\A = \AR dR + \Am d\mu = x \times S,
+\end{align}
+if
+\beqn
+ \frac{dR}{(1-R)^2 C_r} = \frac{d\mu}{C_\mu} = x
+\eeqn
+
+% And at separatrix $r = 2, \mu = 0$, $\Omega = \Omega' = 0$, $\mathcal K = -1 + \frac{2r}{\Sigma}$
+% \beq
+% C_\mu = 0, \quad C_r = \mathcal K_{,r} = -\frac{2}{r^2} = - \frac{1}{2}, \quad
+% S = \frac{\Sigma}{\Delta} II' = \frac{4}{a^2} II'
+% \eeq
+%
+% \beq
+% \Ar = -\frac{8}{a^2} II' = (1-R)^2\AR
+% \eeq
+With
+\begin{align}
+    \frac{dR}{\epsilon \delta R}
+    &= \frac{(1-R)^2 C_r/\delta R }{\sqrt{[(1-R)^2C_r/\delta R]^2
+    + [C_\mu /\delta \mu]^2}} \nn \\
+    \frac{d\mu}{\epsilon \delta \mu}
+    &= \frac{C_\mu/\delta \mu}{\sqrt{[(1-R)^2C_r/\delta R]^2
+    + [C_\mu /\delta \mu]^2}}
+\end{align}
+we have
+\beqn
+x = \frac{\epsilon}{\sqrt{[(1-R)^2C_r/\delta R]^2
++ [C_\mu /\delta \mu]^2}}
+\eeqn
+
+
+% \beqn
+% \alpha
+% &=&\left[ \Omega^2\left( \frac{\beta}{\Sigma}\sst \right)_{,\mu}
+% -\Omega\left(\frac{4ar}{\Sigma}\sst\right)_{,\mu}
+% +\left(\frac{2r}{\Sigma}\right)_{,\mu}\right]\frac{\sst}{\Delta} \nn \\
+% \frac{\alpha}{-2\mu s^2}
+% &=&
+% \Omega^2\left[\frac{\beta}{\Delta\Sigma} + \frac{2r(r^2+a^2)}{\Delta\Sigma}\frac{a^2s^2}{\Sigma}\right]
+% -\Omega \frac{4ar}{\Delta}\frac{ r^2 + a^2}{\Sigma^2}
+% + \frac{2ra^2}{\Delta\Sigma^2} \nn\\
+% &=&
+% \Omega^2\left[1+\frac{2r(r^2+a^2)}{\Delta\Sigma}+ \frac{2r(r^2+a^2)}{\Delta\Sigma}\frac{a^2s^2}{\Sigma}\right]
+% -\Omega \frac{4ar}{\Delta} \frac{r^2+a^2}{\Sigma^2}
+% + \frac{2ra^2}{\Delta\Sigma^2}\nn\\
+% &=&
+% \Omega^2\left(1+  \frac{2r(r^2+a^2)^2}{\Delta\Sigma^2} \right)
+% -\Omega \frac{4ar(r^2+a^2)}{\Delta\Sigma^2}
+% + \frac{2ra^2}{\Delta\Sigma^2}
+% \eeqn
+%
+%
+% coefficent of $\Ah$ (Contopolous14)
+% \beqn
+% \gamma
+% &=&
+% -\left(2\frac{\ct}{\st} + \frac{\beta_{,\theta}}{\beta}-\frac{\Sigma_{,\theta}}{\Sigma} \right) (\beta\Omega^2 -4ar\Omega)\frac{\sst}{\Sigma\Delta}
+% -\frac{4ar\Omega}{\Sigma\Delta} \frac{\beta_{,\theta}}{\beta}\sst + \frac{4ra^2  s\cdot c }{\Delta\Sigma^2}\nn\\
+% &=&
+% -\Omega^2\left(2\frac{\ct}{\st} - \frac{2a^2\Delta s\cdot c}{\beta}+\frac{2a^2 s\cdot c}{\Sigma} \right)  \frac{\beta\sst}{\Sigma\Delta}
+% +\Omega\left(2\frac{\ct}{\st} +\frac{2a^2 s\cdot c}{\Sigma} \right) 4ar \frac{\sst}{\Sigma\Delta}
+% + \frac{4ra^2  s\cdot c }{\Delta\Sigma^2}\nn\\
+% &=&
+% -2 s\cdot c \Omega^2 \left(\beta-a^2\Delta\sst +\frac{a^2\beta\sst}{\Sigma} \right) \frac{1}{\Sigma\Delta}
+% +2 s\cdot c \Omega \left(1 +\frac{a^2\sst}{\Sigma} \right) \frac{4ar}{\Sigma\Delta}
+% + \frac{4ra^2  s\cdot c }{\Delta\Sigma^2}\nn\\
+% \frac{\gamma}{-2 s\cdot c}
+% &=&
+% \Omega^2 \left(\beta\frac{r^2+a^2}{\Sigma}-a^2\Delta\sst\right) \frac{1}{\Sigma\Delta}
+% -\Omega \frac{4ar(r^2+a^2)}{\Delta\Sigma^2}
+% -\frac{2ra^2}{\Delta\Sigma^2}\nn\\
+% &=&
+% \Omega^2 \left( \frac{r^2+a^2}{\Sigma}+ \frac{2r(r^2+a^2)^2}{\Delta\Sigma^2} -\frac{a^2\sst}{\Sigma}\right)
+% -\Omega \frac{4ar(r^2+a^2)}{\Delta\Sigma^2}
+% -\frac{2ra^2}{\Delta\Sigma^2}\nn\\
+% &=&
+% \Omega^2 \left( 1 + \frac{2r(r^2+a^2)^2}{\Delta\Sigma^2} \right) -\Omega \frac{4ar(r^2+a^2)}{\Delta\Sigma^2}
+% -\frac{2ra^2}{\Delta\Sigma^2}
+% \eeqn
+
+\newpage
+\section{NHEK coordinate}
+
+\[g_{\mu\nu}=2\Gamma\left(
+  \begin{array}{cccc}
+    -r^2(1-\Lambda^2) & 0 & 0 & r\Lambda^2 \\
+    0& \frac{1}{r^2} & 0 & 0\\
+    0 & 0 & 1 & 0 \\
+   r\Lambda^2  & 0 & 0 & \Lambda^2 \\
+  \end{array}\right), \qquad g^{\mu\nu}=\frac{1}{2\Gamma}\left(
+  \begin{array}{cccc}
+    -\frac{1}{r^2} & 0 & 0 & \frac{1}{r} \\
+    0& r^2 & 0 & 0\\
+    0 & 0 & 1 & 0 \\
+   \frac{1}{r}  & 0 & 0 & \frac{1}{\Lambda^2}-1 \\
+  \end{array}
+\right)\]
+
+\[\Gamma(\theta) = \frac{1+\cct}{2},\qquad \Lambda(\theta) = \frac{2\st}{1+\cct} = \frac{\st}{\Gamma} \]
+\[\sqrt{-g} = 4\Gamma^2\Lambda = 4\st\Gamma \]
+\[\sqrt{-g}g^{rr} = 2r^2\sin\theta\qquad \sqrt{-g}g^{\theta\theta} = 2\st \]
+
+\beq
+\label{poloidal}
+F_{r\phi} = -F_{\phi r}=\psi_{,r} \ , F_{\theta\phi} = -
+F_{\phi\theta} = \psi_{,\theta} \ ,
+\eeq
+\beq
+\label{electricfield}
+F_{tr} = -F_{rt} = \Omega \psi_{,r} \ , F_{t\theta}= - F_{\theta
+t} = \Omega \psi_{,\theta} \ ,
+\eeq
+\beq
+\label{toroidal}
+F_{r\theta} = -F_{\theta r} = -\frac{I}{r^2\Lambda} \ .
+\eeq
+
+\beq
+-\Omega\left[(\sqrt{-g}F^{tr})_{,r}+(\sqrt{-g}F^{t\theta})_{,\theta}\right]
++F_{r\theta}I'(A_\phi)
++\left[(\sqrt{-g}F^{\phi r})_{,r}+(\sqrt{-g}F^{\phi\theta})_{,\theta} \right]=0.
+\eeq
+
+\beqn
+F_{tr}&=&\Omega \Ar\nn\\
+F^{tr}&=&g^{rr}(g^{tt}F_{tr}+g^{t\phi}F_{\phi r}) \nn\\
+&=&\left(g^{tt}\Omega - g^{t\phi} \right)g^{rr}\Ar
+\eeqn
+
+\beqn
+F_{\phi r}
+&=&- A_{\phi,r} \nn\\
+F^{\phi r}
+&=&g^{\phi\alpha}g^{rr}F_{\alpha r}
+=g^{rr}(g^{\phi t} F_{tr} + g^{\phi\phi} F_{\phi r})\nn\\
+&=& (g^{\phi t}\Omega-g^{\phi\phi})g^{rr}\Ar
+\eeqn
+
+% 
+% \beqn
+% &&-\Omega(\sqrt{-g}F^{tr})_{,r}+(\sqrt{-g}F^{\phi r})_{,r} \leftarrow X\nn\\
+% &=&-\Omega\left[\sqrt{-g}g^{rr} (g^{tt}\Omega - g^{t\phi} )\Ar \right]_{,r}
+% 	+ \left[\sqrt{-g}g^{rr} (g^{\phi t}\Omega-g^{\phi\phi}) \Ar \right]_{,r}\nn\\
+% &=&\left[\sqrt{-g}g^{rr}(-g^{tt}\Omega^2+2g^{t\phi}\Omega-g^{\phi\phi}) \right] \Arr
+% 	+\left[\sqrt{-g}g^{rr} (-g^{tt}\Omega + g^{\phi t})\right]\Omega' \Ar^2 \nn\\
+% &&-\Omega\left[(\sqrt{-g}g^{rr})_{,r} (g^{tt}\Omega - g^{t\phi} ) +\sqrt{-g}g^{rr}(g^{tt}_{,r}\Omega - g^{t\phi}_{,r} )\right]\Ar \nn\\
+% &&	+ \left[(\sqrt{-g}g^{rr})_{,r} (g^{\phi t}\Omega-g^{\phi\phi})+ \sqrt{-g}g^{rr} (g^{\phi t}_{,r}\Omega-g^{\phi\phi}_{,r}) \right] \Ar \nn\\
+% &=&\left[\sqrt{-g}g^{rr}(-g^{tt}\Omega^2+2g^{t\phi}\Omega-g^{\phi\phi}) \right] \Arr
+% 	+\left[\sqrt{-g}g^{rr} (-g^{tt}\Omega + g^{\phi t})\right]\Omega' \Ar^2 \nn\\
+% &&+\left[(\sqrt{-g}g^{rr})_{,r} (-g^{tt}\Omega^2 + 2g^{t\phi}\Omega-g^{\phi\phi} ) +\sqrt{-g}g^{rr}(-g^{tt}_{,r}\Omega^2 + 2 g^{t\phi}_{,r}\Omega -g^{\phi\phi}_{,r})\right]\Ar \nn\\
+% &=&
+% 2r^2\st\left(\frac{\Omega^2}{2\Gamma r^2} + \frac{\Omega}{\Gamma r} - \frac{1}{2\Gamma}(\frac{1}{\Lambda^2}-1)\right) \Arr + 2r^2\st\left(\frac{\Omega}{2\Gamma r^2} + \frac{1}{2\Gamma r} \right)\Omega'\Ar^2 \nn\\
+% &&+\left[4r\st\left(\frac{\Omega^2}{2\Gamma r^2} + \frac{\Omega}{\Gamma r} - \frac{1}{2\Gamma}(\frac{1}{\Lambda^2}-1)\right) + 2r^2\st\left(-\frac{\Omega^2}{\Gamma r^3} - \frac{\Omega}{\Gamma r^2} \right) \right]\Ar \nn\\
+% &=&
+% 2\st\left(\frac{\Omega^2}{2\Gamma} + \frac{r\Omega}{\Gamma} - \frac{r^2}{2\Gamma}(\frac{1}{\Lambda^2}-1)\right) \Arr + \st\frac{\Omega+r}{\Gamma} \Omega'\Ar^2 \nn\\
+% &&+\left[4\st\left(\frac{\Omega^2}{2\Gamma r} + \frac{\Omega}{\Gamma } - \frac{r}{2\Gamma}(\frac{1}{\Lambda^2}-1)\right) - 2\st\left(\frac{\Omega^2}{\Gamma r} +\frac{\Omega}{\Gamma} \right) \right]\Ar\nn\\
+% &=&
+% \frac{\st}{\Gamma}\left(\Omega^2+ 2r\Omega - r^2(\frac{1}{\Lambda^2}-1)\right) \Arr + \frac{\st}{\Gamma} (\Omega+r)\Omega'\Ar^2 \nn\\
+% &&+2\frac{\st}{\Gamma}\left(\Omega - r(\frac{1}{\Lambda^2}-1)\right)\Ar\nn\\
+% &=&
+% \Lambda\left[(\Omega+r)^2-\frac{r^2}{\Lambda^2}\right] \Arr + \Lambda (\Omega+r)\Omega'\Ar^2 +2\Lambda\left[\Omega +r - \frac{r}{\Lambda^2}\right]\Ar
+% \eeqn
+%
+% \beq
+% \frac{X}{\Lambda} = \left[(\Omega+r)^2-\frac{r^2}{\Lambda^2}\right] \Arr + (\Omega+r)\Omega'\Ar^2 +2\left[\Omega +r - \frac{r}{\Lambda^2}\right]\Ar
+% \eeq
+
+\beqn
+F_{t \theta }
+&=& \Omega A_{\phi,\theta} = \Omega (-\st \Am)\nn\\
+F^{t\theta}
+&=&g^{\theta\theta}(g^{tt}F_{t\theta}+g^{t\phi}F_{\phi \theta})
+= g^{\theta\theta}(g^{tt}\Omega  -g^{t\phi}) \Ah
+\eeqn
+
+\beq
+F_{r \theta} = -\frac{I}{r^2\Lambda}, \qquad F_{r \theta}I' = -\frac{II'}{r^2\Lambda}
+\eeq
+
+\beqn
+F_{\phi \theta } &=& - \Ah\nn\\
+F^{\phi \theta}
+&=&g^{\theta\theta}(g^{\phi t}F_{t\theta}+g^{\phi \phi}F_{\phi \theta})
+= g^{\theta\theta}(g^{t\phi}\Omega- g^{\phi\phi})\Ah
+\eeqn
+
+\beqn
+&&-\Omega(\sqrt{-g}F^{tr})_{,r}+(\sqrt{-g}F^{\phi r})_{,r} \leftarrow X\nn\\
+&=&-\Omega\left[\sqrt{-g}g^{rr} (g^{tt}\Omega - g^{t\phi} )\Ar \right]_{,r}
+	+ \left[\sqrt{-g}g^{rr} (g^{\phi t}\Omega-g^{\phi\phi}) \Ar \right]_{,r}\nn\\
+&=&\Omega\left[\Lambda (\Omega+r)\Ar \right]_{,r}
+	+ \left[\left(\Lambda r(\Omega+r)-\frac{r^2}{\Lambda}\right) \Ar \right]_{,r}\nn\\
+&=& \left[\Lambda(\Omega+r)^2-\frac{r^2}{\Lambda}\right] \Arr + \Lambda(\Omega+r)\Omega'\Ar^2
++2\left[\Lambda(\Omega +r) - \frac{r}{\Lambda}\right]\Ar
+% &=&(\Omega+r)\left[\Lambda (\Omega+r)\Ar \right]_{,r}
+% 	+ \Lambda (\Omega+r) \Ar -\left(\frac{r^2\Ar}{\Lambda }\right)_{,r}
+\eeqn
+
+\beqn
+&&-\Omega(\sqrt{-g}F^{t\theta})_{,\theta}+F_{r\theta}I'(A_\phi)
++(\sqrt{-g}F^{\phi\theta})_{,\theta} \leftarrow Y \nn\\
+&=&
+-\Omega\left[\sqrt{-g}g^{\theta\theta}(g^{tt}\Omega  -g^{t\phi}) \Ah\right]_{,\theta}-\frac{II'}{r^2\Lambda}+\left[\sqrt{-g}g^{\theta\theta}(g^{t\phi}\Omega- g^{\phi\phi})\Ah\right]_{,\theta}\nn\\
+&=&
+\Omega\left[\frac{\st}{\Gamma}(\frac{\Omega}{r^2}  + \frac{1}{r}) \Ah\right]_{,\theta}-\frac{II'}{r^2\Lambda}+\left[\frac{\st}{\Gamma} \left(\frac{\Omega}{r}-(\frac{1}{\Lambda^2}-1)\right)\Ah\right]_{,\theta}\nn\\
+&=&
+\Omega\left[\frac{\st}{\Gamma}\frac{\Omega+r}{r^2} \Ah\right]_{,\theta}-\frac{II'}{r^2\Lambda}
++\left[\frac{\st}{\Gamma} \left(\frac{\Omega+r}{r}-\frac{1}{\Lambda^2}\right)\Ah\right]_{,\theta}\nn\\
+&=&
+\Omega\st\left[\frac{\sst}{\Gamma}\frac{\Omega+r}{r^2} \Am\right]_{,\mu}-\frac{II'}{r^2\Lambda}
++\st \left[\frac{\sst}{\Gamma} \left(\frac{\Omega+r}{r}-\frac{1}{\Lambda^2}\right)\Am\right]_{,\mu}\nn\\
+&=&
+\frac{\st}{r^2} \left[\frac{\sst}{\Gamma}(\Omega+r)^2-\Gamma r^2\right]\Amm-\frac{II'}{r^2\Lambda} \nn \\
+&+&
+\frac{\st}{r^2}\partial_\mu^\Omega \left[\frac{\sst}{\Gamma}(\Omega+r)^2-\Gamma r^2\right]\Am
++ \frac{\st}{r^2} \frac{\sst}{\Gamma} (\Omega+r) \Omega' \Am^2
+\eeqn
+
+\beq
+\begin{aligned}
+    0 & = (X+Y)\st \\
+    & = \left[\frac{\sst}{\Gamma}(\Omega+r)^2-\Gamma r^2\right] \Arr + \frac{\sst}{\Gamma}(\Omega+r)\Omega'\Ar^2
+    +2\left[\frac{\sst}{\Gamma} (\Omega +r) - \Gamma r\right]\Ar \\
+    & + \frac{\sst}{r^2} \left[\frac{\sst}{\Gamma}(\Omega+r)^2-\Gamma r^2\right]\Amm-\frac{\Gamma}{r^2}II' \nn \\
+    & +
+    \frac{\sst}{r^2}\partial_\mu^\Omega \left[\frac{\sst}{\Gamma}(\Omega+r)^2-\Gamma r^2\right]\Am
+    + \frac{\sst}{r^2} \frac{\sst}{\Gamma} (\Omega+r) \Omega' \Am^2
+\end{aligned}
+\eeq
+
+\beqn
+&&\phantom{+}
+ \left[\Arr + \frac{\sst}{r^2}\Amm \right]  \mathcal K(r,\theta; \Omega )\nn \\
+&&
++\left[\Ar \partial_r^\Omega  +  \frac{\sst}{r^2}\Am \partial_\mu^\Omega\right] \mathcal K(r,\theta; \Omega ) \nn \\
+&&
++ \frac{1}{2}\left[\Ar^2 + \frac{\sst}{r^2}\Am^2\right]  \Omega' \partial_\Omega \mathcal K(r,\theta; \Omega )
+- \frac{\Gamma}{r^2}II' = 0,
+\eeqn
+with
+\beq
+\mathcal K = \frac{\sst}{\Gamma}(\Omega+r)^2 - r^2\Gamma
+\eeq
+
+\beqn
+Y&=&
+\frac{1}{2r^2\Lambda \Ah}\left\{\left[\Lambda(\Omega+r)\Ah \right]^2 -I^2 \right\}_{,\theta}
+-\left(\frac{ \Ah}{\Lambda}\right)_{,\theta}
+\eeqn
+
+Regularity condition at $r=0$, requires
+\[\left\{ [\Lambda(\Omega+r)\Ah ]^2 -I^2 \right\}_{r=0} = 0, \quad \partial_r\left\{ [\Lambda(\Omega+r)\Ah ]^2 -I^2 \right\}_{r=0}  = 0  \]
+which imply
+\beq
+\left[\Lambda(\Omega+r)\Ah \right]^2 -I^2 = \sum_{n=2}^{\infty} r^n f_n(\theta)
+\eeq
+
+\end{document}
